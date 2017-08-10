@@ -2,29 +2,30 @@
 <html lang="en">
 <head>
   <title>AnalogSea - Sign Up</title>
+  <meta name="description" content="Sign up for AnalogSea service. Create an account and get started today.">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
   
-  <header>
-    <img src="https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.5.2_challenge_signup_form/logo.png" alt="AnalogSea Logo" class="signup-logo">
+  <header class="signup-logo">
+    <img src="https://tf-assets-prod.s3.amazonaws.com/tf-curric/WEB-DEV-001/2.5.2_challenge_signup_form/logo.png" alt="AnalogSea Logo">
   </header>
   
   <main role="main">
     
     <section class="signup">
       
-      <form action="/signup/" method="post" class="signupForm" role="form">
+      <form action="/signup/" method="post" class="signup-form" role="form">
         
         <h1 role="banner">Sign up</h1>
         
         <fieldset name="login-info">
           <legend>Login info</legend>
-          <label for="email-address">Email</label>
+          <label for="email-address" required>Email</label>
           <input type="email" name="email-address" id="email-address" required="true" placeholder="foo@bar.com">
-          <label for="user-password">Password</label>
+          <label for="user-password" required>Password</label>
           <input type="password" name="user-password" id="user-password" required="true" placeholder="1234passw0rd">
           <button type="submit">Sign up</button>
         </fieldset>
